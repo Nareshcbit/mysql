@@ -19,3 +19,5 @@ services:
       - my-datavolume:/var/lib/mysql
 volumes:
   my-datavolume:
+networks:
+  db-nw:
