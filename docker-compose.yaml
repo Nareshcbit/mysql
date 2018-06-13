@@ -17,6 +17,8 @@ services:
       retries: 5
     volumes:
       - my-datavolume:/var/lib/mysql
+    networks:
+      - db-nw
 volumes:
   my-datavolume:
 networks:
